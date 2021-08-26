@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { Fragment } from "react";
+import Head from 'next/head';
+
+import Container from "../components/container";
 
 const About = () => {
-    return <h1>About</h1>
-}
+  return (
+    <Container>
+        <Head>
+          <title>Next JS project - About</title>
+        </Head>
+      <h1>About</h1>
+    </Container>
+  );
+};
 
 export default About;

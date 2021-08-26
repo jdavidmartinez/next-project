@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { Fragment } from "react";
+import Head from "next/head";
+
+import Container from "../components/container";
 
 const Index = () => {
-    return <h1>Hello World!</h1>
-}
+  return (
+    <Fragment>
+      <Container>
+        <Head>
+          <title>Next JS project - Home</title>
+        </Head>
+        <h1> Index</h1>
+      </Container>
+    </Fragment>
+  );
+};
 
 export default Index;
